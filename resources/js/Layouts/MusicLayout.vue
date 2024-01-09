@@ -98,7 +98,7 @@
                 <h4 class="text-3xl font-bold my-6">
                     <slot name="title" />
                 </h4>
-                <div>
+                <div class="button">
                     <slot name="action" />
                 </div>
             </div>
@@ -113,3 +113,25 @@ export default {
 
 }
 </script>
+
+<style>
+    .button{
+        padding: 1rem;
+        background-color: #111827;
+        color: white;
+        border-radius: 50px;
+        font-weight: bold;
+        transition: all 0.3s ease 0s;
+
+
+
+    }
+
+    .button:hover{
+        transform: scale(1.05,1.05);
+        letter-spacing: 1px;
+        transition: all 0.3s ease 0s;
+
+
+    }
+</style>

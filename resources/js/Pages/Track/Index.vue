@@ -5,7 +5,7 @@
 
         <template #title>Musiques</template>
         <template #action>
-        <Link :href="route('tracks.create')">Ma musique</Link>
+        <Link :href="route('tracks.create')" class="button">Ma musique</Link>
         </template>
         <template #content>
             <div>

@@ -25,6 +25,18 @@ export default {
 
     name: "Index",
     components:{MusicLayout,Link},
+    data(){
+        return {
+            form: this.$inertia.form({
+                title:'',
+                artist:'',
+                image:null,
+                music:null,
+                display:true,
+
+            })
+        }
+    },
     props: {
         tracks: {
             type:Array,
