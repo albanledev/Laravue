@@ -21,6 +21,8 @@ Route::get('/', [TrackController::class, 'index'])->name('tracks.index');
 
 Route::get('/Tracks/Create', [TrackController::class, 'create'])->name('tracks.create');
 
+Route::post('/Tracks/Store', [TrackController::class, 'store'])->name('tracks.store');
+
 
 
 Route::middleware([
